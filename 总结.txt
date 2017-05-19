@@ -1,17 +1,17 @@
-ï»¿1.åˆ›å»ºssh  åœ¨ git bash
+1.´´½¨ssh  ÔÚ git bash
   ssh-keygen -t rsa -f /c/User/GT/.ssh/id_rsa_ec  -C "username"
   
-#æ³¨ï¼š 
-#-t  è¡¨ç¤ºåŠ å¯†ç±»å‹ rsa
-#-f  è¡¨ç¤ºæ–‡ä»¶è·¯å¾„
-#-C  æ³¨é‡Šï¼Œï¼Œï¼Œç™»é™†æ—¶ä½¿ç”¨çš„ç”¨æˆ·åï¼Ÿ(åé¢æ²¡æœ‰ç”¨åˆ°)
-#id_rsa_ecæ˜¯ç§é’¥æ–‡ä»¶å
+#×¢£º 
+#-t  ±íÊ¾¼ÓÃÜÀàĞÍ rsa
+#-f  ±íÊ¾ÎÄ¼şÂ·¾¶
+#-C  ×¢ÊÍ£¬£¬£¬µÇÂ½Ê±Ê¹ÓÃµÄÓÃ»§Ãû£¿(ºóÃæÃ»ÓĞÓÃµ½)
+#id_rsa_ecÊÇË½Ô¿ÎÄ¼şÃû
 
 2.  ssh-agent ssh-add ~/.ssh/id_rsa_ec
   
-#éé»˜è®¤id-rsaæ–‡ä»¶éœ€è¦å°†sshæ·»åŠ åˆ°ssh-agent
+#·ÇÄ¬ÈÏid-rsaÎÄ¼şĞèÒª½«sshÌí¼Óµ½ssh-agent
 
-3.	åœ¨~/.ssh/ä¸‹å»ºç«‹configæ–‡ä»¶ï¼Œæ–‡ä»¶å†…å®¹ï¼š
+3.	ÔÚ~/.ssh/ÏÂ½¨Á¢configÎÄ¼ş£¬ÎÄ¼şÄÚÈİ£º
 	#user for myself github
 	Host github_gt
 	HostName github.com
@@ -30,45 +30,45 @@
 	User git
 	IdentityFile ~/.ssh/id_rsa_aaa
 	
-#æ³¨ï¼šå¯ä»¥åªæœ‰1ä¸ªï¼Œä¹Ÿå¯ä»¥æœ‰å¤šä¸ª
-#Host è¡¨ç¤ºåˆ«åï¼Œç”¨äºåŒºåˆ†å’Œç¡®å®šå½“å‰ é“¾æ¥ çš„gitHubä»“åº“
-#IdentityFile è¡¨ç¤ºsshç§é’¥æ–‡ä»¶ï¼Œä¼šç”¨å®ƒä¸ä¹‹æ¯”å¯¹
+#×¢£º¿ÉÒÔÖ»ÓĞ1¸ö£¬Ò²¿ÉÒÔÓĞ¶à¸ö
+#Host ±íÊ¾±ğÃû£¬ÓÃÓÚÇø·ÖºÍÈ·¶¨µ±Ç° Á´½Ó µÄgitHub²Ö¿â
+#IdentityFile ±íÊ¾sshË½Ô¿ÎÄ¼ş£¬»áÓÃËüÓëÖ®±È¶Ô
 
-# ssh æ–¹å¼ å…³è” githubåº“
-# ----> åé¢ git remote add origin git@github_ec:276073970/ecWeb.git
-# å…¶ä¸­çš„HOSTå°±æ˜¯ç”¨äºgit@HOST
+# ssh ·½Ê½ ¹ØÁª github¿â
+# ----> ºóÃæ git remote add origin git@github_ec:276073970/ecWeb.git
+# ÆäÖĞµÄHOST¾ÍÊÇÓÃÓÚgit@HOST
 
-4.	å°†å…¬é’¥æ·»åŠ åˆ°gitHubåå°
-	å¯ä»¥æµ‹è¯• sshé“¾æ¥
+4.	½«¹«Ô¿Ìí¼Óµ½gitHubºóÌ¨
+	¿ÉÒÔ²âÊÔ sshÁ´½Ó
 	eg:
 	ssh -T git@github_ec
-	æ˜¾ç¤ºç»“æœä¸ºï¼šHi 276073970! You've successfully authenticated, but GitHub does not provide shell access.
-	å…¶ä¸­ï¼Œ276073970 æ˜¯ githubä»“åº“æ‰€æœ‰è€…çš„ç”¨æˆ·å
+	ÏÔÊ¾½á¹ûÎª£ºHi 276073970! You've successfully authenticated, but GitHub does not provide shell access.
+	ÆäÖĞ£¬276073970 ÊÇ github²Ö¿âËùÓĞÕßµÄÓÃ»§Ãû
 
 5.	git init
 
-# åˆå§‹åŒ–æœ¬åœ°ä»“åº“
+# ³õÊ¼»¯±¾µØ²Ö¿â
 
 6.	git remote add origin git@github_ec:276073970/ecWeb.git
 
-# å…³è”æœ¬åœ°ä»“åº“ä¸è¿œç¨‹ä»“åº“
-# åé¢å¯ä»¥ä¿®æ”¹ï¼Œåœ¨ ./.git/configæ–‡ä»¶
-# ä¿®æ”¹:	url = git@github_ec:276073970/ecWeb.git
+# ¹ØÁª±¾µØ²Ö¿âÓëÔ¶³Ì²Ö¿â
+# ºóÃæ¿ÉÒÔĞŞ¸Ä£¬ÔÚ ./.git/configÎÄ¼ş
+# ĞŞ¸Ä:	url = git@github_ec:276073970/ecWeb.git
 
 7.  vim newfile
 	git add newfile
 	git commit -m "message" newfile
-	git push -u origin master	#åˆæ¬¡
-	#git push éç¬¬ä¸€æ¬¡
+	git push -u origin master	#³õ´Î
+	#git push ·ÇµÚÒ»´Î
 
-#æ³¨:
-#ç¬¬ä¸€æ¬¡pushçš„æ—¶å€™å¯èƒ½éœ€è¦å…ˆpullæ“ä½œ
+#×¢:
+#µÚÒ»´ÎpushµÄÊ±ºò¿ÉÄÜĞèÒªÏÈpull²Ù×÷
 #git pull origin master 
-#æŒ‡å®šremotåˆ†æ”¯ 
+#Ö¸¶¨remot·ÖÖ§ 
 	
-é™„ï¼š
+¸½£º
 
-~/.ssh/configæ–‡ä»¶ 
+~/.ssh/configÎÄ¼ş 
 
 #user for myself github
 Host github_gt
@@ -88,7 +88,7 @@ HostName github.com
 User git
 IdentityFile ~/.ssh/id_rsa_aaa
 
-./.git/configæ–‡ä»¶
+./.git/configÎÄ¼ş
 
 [core]
 	repositoryformatversion = 0
@@ -106,13 +106,118 @@ IdentityFile ~/.ssh/id_rsa_aaa
 	merge = refs/heads/master
 
 
-###################################################
-############### ç›´æ¥clone #########################
-###################################################
+#============================================
+#=======ÔÚ×Ô¼ºµÄÔÆÖ÷»ú´î½¨git·şÎñÆ÷==========
+#============================================
 
-1.git clone git@github_ec:276073970/ecWeb.git .
+·şÎñÆ÷ÉÏ£º
+1.°²×°git
+  yum -y install git # centOS
+  apt-get install git #ubuntu
 
-# æœ€åçš„ç‚¹ æ˜¯è¡¨ç¤º cloneåˆ°å½“å‰ç›®å½•
-# push æ“ä½œå¯ä»¥ç›´æ¥è¿›è¡Œ
+2.´´½¨gitÓÃ»§²¢ÇÒ¸³ÓèÈ¨ÏŞ
+  $ adduser git
+#»áÔÚ/homeÄ¿Â¼ÏÂ¿´µ½Ò»¸ögitÄ¿Â¼
 
-#é€‚ç”¨ä¸githubä¸Šçš„repositotyä¸ä¸ºç©º
+3.¸øgitÓÃ»§·ÖÅäÒ»¸öÃÜÂë
+  $ passwd git 123456(ÄãµÄÃÜÂë)
+
+#Õâ¸öÃÜÂëÓÃÔÚÄãºóÃæÌá½»´úÂëµÄÊ±ºòÊ¹ÓÃ(È»¶ø²¢Ã»ÓĞÓÃµ½¡£¡£¡£)
+
+±¾»ú(×Ô¼ºµÄµçÄÔ)£º
+git-bashÖĞ
+´´½¨Ò»¸öĞÂµÄ ssh key,²ÎÉÏ
+
+·şÎñÆ÷ÉÏ:
+#½«ssh public key Ìí¼Óµ½·şÎñÆ÷
+
+4.cd /home/git/
+# git±íÊ¾ÓÃ»§git
+
+5.mkdir .ssh
+#Ã»ÓĞ¸ÃÄ¿Â¼¾Í´´½¨
+
+6.cd .ssh
+
+7.vim authorized_keys
+# ĞÂ½¨ÎÄ¼şauthorized_keys
+
+8.½«public key´®ÌîÈë
+# Èç¹ûÓĞ¶à¸ö£¬Ôò»»ĞĞ×·¼Ó
+# ±£´æÍË³ö
+
+9.ÔÚÆäËüÄ¿Â¼£¬±ÈÈçÍøÕ¾¸ùÄ¿Â¼
+ ÎÒµÄÊÇ /usr/share/nginx/html/,
+ ĞÂ½¨ÎÄ¼ş¼Ğtestgit²âÊÔ
+ 
+ $ cd /usr/share/nginx/html/
+ $ mkdir testgit
+ $ cd testgit
+
+10.git init --bare testgit.git
+#ĞÂ½¨git²Ö¿â£¬Ò»¶¨ÒªÊÇ¿Õ²Ö¿â£¬--bare²ÎÊı²»ÄÜÊ¡ÂÔ
+
+11.
+$ cd ..
+$ chmod -R 777 testgit
+
+#ĞŞ¸ÄtestgitÄ¿Â¼È¨ÏŞ
+#Ò²¿ÉÒÔÊ¹ÓÃchown...×ÔÓÉ·¢»Ó°É
+#Èç¹û²»ĞŞ¸Ä£¬ÄÇÃ´pushµÄÊ±ºò»áÓĞĞ´Èë´íÎó
+
+±¾»ú:
+12.git init
+#ÔÚÒ»¸ö¿ÕÄ¿Â¼ÀïÃæ´´½¨Ò»¸ö¿Õ²Ö¿â
+
+13.git remote add origin git@211.159.184.137:/usr/share/nginx/html/testgit/testgit.git
+#Ìí¼ÓÔ¶³Ì²Ö¿â
+#ÆäÖĞ211.159.184.137ÊÇÔÆ·şÎñÆ÷µÄip£¬¿ÉÒÔÔÚC:\Users\GT\.ssh\configÀïÃæÅäÖÃ
+#user for my cloud server
+
+Host git_cloud
+
+HostName 211.159.184.137
+
+User git
+
+IdentityFile ~/.ssh/id_cloude_server
+#ÕâÊ±¿ÉÒÔÓÃgit_cloudÌæ´ú211.159.184.137
+
+14.
+git add *
+git commit -m "message" *
+git push -u origin master
+# Ìá½»ÎÄ¼ş
+# ²»³öÒâÍâÄÜ³É¹¦
+
+
+·şÎñÆ÷ÉÏ£º
+15.cd /usr/share/nginx/html/testgit/
+#½øÈë´´½¨µÄ²Ö¿âÄ¿Â¼
+#ÕâÊ±ÓÃls¿´²»µ½ÈÎºÎĞ§¹û
+#µ«ÊÇÈ·ÊµÒÑ¾­Ìá½»ÁË
+
+16.cd testgit.git/hooks
+# ×Ô¶¯Í¬²½¹¦ÄÜÓÃµ½µÄÊÇ git µÄ¹³×Ó¹¦ÄÜ
+# ÕâÀïÎÒÃÇ´´½¨post-receiveÎÄ¼ş
+
+17.vim post-receive
+#ĞÂ½¨post-receiveÎÄ¼ş
+
+#ÌîÈë:
+#!/bin/bash
+git --work-tree=/usr/share/nginx/html/testgit checkout -f
+
+#ÆäÖĞ/usr/share/nginx/html/testgit ÊÇ×Ô¶¨ÒåµÄ£¬ÎÒ·ÅÔÚÍøÕ¾ÀïÃæ¿ÉÒÔÖ±½Ó·ÃÎÊ
+
+18. chmod 777 post-receive
+ĞŞ¸ÄÎÄ¼şÈ¨ÏŞ£¬¸ÃÎÄ¼şÓ¦¸Ã¾ßÓĞ¿ÉÖ´ĞĞÈ¨ÏŞ
+
+19.ÔÙ´Îpush¾Í¿ÉÒÔÔÚ·şÎñÆ÷/usr/share/nginx/html/testgitÉÏ¿´µ½Ìá½»µÄÎÄ¼şÁË
+
+
+
+¡¾²Î¿¼×ÊÁÏ¡¿
+1.http://www.tangshuang.net/1693.html
+
+2.http://blog.csdn.net/baidu_30000217/article/details/51327289
